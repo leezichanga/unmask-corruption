@@ -1,0 +1,186 @@
+/* body {
+  background-image: url(../static/css/image/pic.jpg);
+} */
+
+.jumbotron {
+  background-color: #d9cce2;
+}
+
+body {
+  overflow-x: : hidden;
+  scroll-behavior: auto;
+  background-color: #d9cce2;
+  /* background-image: url(../image/pexels.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  background-attachment: fixed;
+}
+
+/*
+h1 {
+  font-family: 'Gloria Hallelujah', cursive;
+} */
+
+h1 {
+  text-align: center;
+  color: cyan;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: blue;
+}
+
+h3 {
+  color: blue;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*----START FOOTER----*/
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-right: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 3%;
+  color: #808080;
+  background-color: #101010;
+  cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+footer div {
+  list-style: none
+}
+
+.social li {
+  float: left;
+  padding-left: 10px;
+}
+
+.copyright {
+  background-color: #000;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom-up {
+  padding-top: 7%;
+  font-size: 30px;
+}
+
+.bottom-up span {
+  color: royalblue;
+}
+
+.bottom-up span:hover {
+  color: skyblue;
+}
+
+.fa {
+  padding: 5px;
+  color: #aaa;
+}
+
+.fa:hover {
+  text-decoration: none;
+}
+
+.fa-twitter:hover {
+  border: 1px solid #00bfff ! important;
+  background-color: #00bfff;
+  color: #fff;
+}
+
+.fa-facebook:hover {
+  background-color: #00008b;
+  color: #fff;
+  border: 1px solid #00008b ! important;
+}
+
+.fa-instagram:hover {
+  background-color: #cd5c5c;
+  color: #fff;
+  border: 1px solid #cd5c5c ! important;
+}
+
+.fa-linkedin:hover {
+  background-color: blue;
+  color: #fff;
+  border: 1px solid blue ! important;
+}
+
+.fa-github:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid fff ! important;
+}
+
+.social {
+  list-style: none;
+}
+
+.social li {
+  font-size: 20px;
+}
+
+.social-top li {
+  font-size: 20px;
+}
+
+.social-top li .fa:hover {
+  background-color: transparent ! important;
+  color: grey;
+  border: none ! important;
+}
+
+footer .social .social {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+footer .social {
+  margin-bottom: 0px ! important;
+}
+
+/*----END FOOTER----*/
+
+/*----START COPYRIGHT----*/
+
+.copyright {
+  background-color: #000;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-top: 0;
+  text-align: center;
+  color: #808080;
+}
+
+.copyright {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+/*----END COPYRIGHT----*/

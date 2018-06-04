@@ -1,0 +1,160 @@
+{% extends 'base.html' %} {% load bootstrap3 %} {% load static %}
+
+<!DOCTYPE html>
+<html>
+
+  <head>width="500px"
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Unmask Corruption</title>
+  </head>
+
+  <body>
+
+    {% block content %}
+    <div class="jumbotron">
+      <h1 class="text-center"><img src="static/image/pic2.jpg" alt="" height="100px" width="200px">  <br>Unmask Corruption</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="static/image/pic3.jpg" alt="break" height="500px" width="500px">
+
+
+        </div>
+
+        <div class="col-md-6">
+          <h1 style="text-decoration: underline; color:blue;">What is Corruption?</h1>
+          <p>Generally speaking as “the abuse of entrusted power for private gain”. Corruption can be classified as grand, petty and political, depending on the amounts of money lost and the sector where it occurs. Grand corruption consists of acts committed
+            at a high level of government that distort policies or the central functioning of the state, enabling leaders to benefit at the expense of the public good. Petty corruption refers to everyday abuse of entrusted power by low- and mid-level
+            public officials in their interactions with ordinary citizens, who often are trying to access basic goods or services in places like hospitals, schools, police departments and other agencies. Political corruption is a manipulation of policies,
+            institutions and rules of procedure in the allocation of resources and financing by political decision makers, who abuse their position to sustain their power, status and wealth.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <h2>Types Of Corruption</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/Bribery1.jpg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Bribery</h3>
+              <p class="card-text">Is the act of giving money or goods to a recipient in exchange for an alteration of their behavior to the benefit/interest of the giver.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/Fraud1.jpg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Fraud</h3>
+              <p class="card-text">Is deliberate deception to secure unfair or unlawful gain, or to deprive a victim of a legal right.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/favoritism1.jpg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Favouritism</h3>
+              <p class="card-text">It's the act of favouring people one knows of are related to(nepotism). Mostly involves awarding advantages to relatives, workmates or friends</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/embez.jpeg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Embezzlement</h3>
+              <p class="card-text">Theft or misappropriation of funds placed in one's trust or belonging to one's employer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/extort.jpeg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Extortion</h3>
+              <p class="card-text">The practice of obtaining something, especially money, through force or threats.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card mb-2">
+            <img class="img-fluid" src="static/image/Abuse2.jpg" alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">Abuse Of Power</h3>
+              <p class="card-text">Act of using one's position of power to gain access to private information, or just manipulating someone with the ability to punish them if they don't comply.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4 style="text-align: center; color:blue;  padding-top: 20px; padding-bottom: 20px; font-size:30px;">How to report corruption</h4>
+
+      <p> Click on the link below and fill the form.</p>
+      <div class="link" style="text-align: center; font-size:20px;">
+        <a class="nav-item nav-link active" href="{% url 'comment' %}">Report Corruption</a>
+      </div>
+    </div>
+    <!-- <a href="report.html" class="btn btn-block">Press Here To Report Corruption</button></a> -->
+    <!-- START OF FOOTER-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="row  footer">
+            <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+              <p style="font-weight: bold;">Contact:</p>
+              <p>elizabethichanga@gmail.com<br/></p>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+              <p style="font-weight: bold;">Location</p>
+              <p>Nairobi, Kenya.</p>
+
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 social">
+              <p style="font-weight: bold;">Follow Us</p>
+              <a href="https://www.linkedin.com/in/"><i class="social fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/"><i class="social fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="social fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--END OF FOOTER-->
+
+
+    <!--Start of the copyright____-->
+    <div class="row copyright">
+      <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+        <p>&copy; 2018 Elizabeth Ichang'a</p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+        <p>Made by: Elizabeth Ichang'a</p>
+      </div>
+
+    </div>
+
+    <!--End of the copyright__-->
+
+
+
+
+    <!-- </div> -->
+    {% endblock %}

@@ -1,0 +1,29 @@
+{% load bootstrap3 %} {% load static %}
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+<div class="links" style="background:#06051c;">
+  <a class="navbar-brand" href="/" style="font-size:30px;font-family: 'Oswald';"><b>Unmask-Corruption</b></a> {% if user.is_authenticated %}
+  <div class="col-sm-4 col-md-4">
+    <!-- <form action="{% url 'search_results' %}" role="search" class="navbar-form" >
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Category" name="category">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">Search</button>
+        </div>
+      </div>
+    </form> -->
+  </div>
+  {% endif %}
+  <br>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav" style="font-color:green;" style="font-family:'Montserrat',sans-serrif;">
+      {% if user.is_authenticated %}
+      <a class="nav-item nav-link active" href="/">Home</a>
+      <a class="nav-item nav-link active" href="{% url 'about' %}">About</a>
+      <a class="nav-item nav-link active" href="{% url 'comment' %}">Report Corruption</a>
+      <a class="nav-item nav-link active" href="/logout">LogOut</a> {% else %}
+      <p><a class="nav-item nav-link active" href="{% url 'auth_login' %}">LogIn</a> or <a href="/accounts/register/" class="nav-item nav-link active">Sign Up</a></p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</nav>

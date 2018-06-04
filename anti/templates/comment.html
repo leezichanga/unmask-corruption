@@ -1,0 +1,109 @@
+{% extends 'base.html' %} {% load bootstrap3 %} {% load static %} {% block content %}
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script> -->
+    <title>Report corruption</title>
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <h2 style="text-decoration: underline; color:blue;">Corruption Form</h2>
+      <div>
+        <div class="container">
+          <form id="start-page">
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="subject" name="Subject">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="type">Form of corruption:</label>
+              </div>
+              <div class="col-75">
+                <select id="type" name="type">
+          <option value="Select">Select</option>
+          <option value="Bribery">Bribery</option>
+          <option value="Abuse of power">Abuse of power</option>
+          <option value="Favouritism">Favouritism</option>
+          <option value="Fraud">Fraud</option>
+          <option value="Other">Other</option>
+         </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="county">Which county did the incident take place?</label>
+              </div>
+              <div class="col-75">
+                <select id="county" name="county">
+            <option value="Select">Select</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Kiambu">Kiambu</option>
+            <option value="laikipia">laikipia</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Kisii">Kisii</option>
+            <option value="Nyanza">Nyanza</option>
+            <option value="Nyeri">Nyeri</option>
+            <option value="Kitui">Kitui</option>
+            <option value="Mandera">Mandera</option>
+            <option value="Other">Other</option>
+        </select>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-25">
+                <label for="position">Position of offender:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="position" name="position">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="report">Whose behalf are you reporting this?</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="report" name="report">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="message">Describe the incident here in as much detail as possible:</label>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+
+            <button id="submit" class="btn-success btn">Submit</button>
+            <br></br>
+            <div class="link">
+              <!-- <a href="index.html"> Go to homepage</a> -->
+            </div>
+            <p> </p><br></br>
+            <h3>Disclaimer:</h3>
+            <p>This disclaimer informs readers that the views, thoughts, and opinions expressed in the text belong solely to the author.We intend to offer our best security measures, with constant upgrades.</p>
+          </form>
+        </div>
+
+
+  </body>
+
+</html>
+{% endblock %}

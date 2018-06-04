@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load bootstrap3 %} {% load static %} {% block content %} {{block.super}}
+<div class="container mt-5">
+  <div class="row mt-5"></div>
+  <div class="row mt-5">
+    {% if category %}
+    <h2>Found {{ category|length }} of searched categories {{message}}</h2> {% else %}
+    <h2> Found 0 categories for the search categories {{message}}</h2> {% endif %}
+  </div>
+  <div class="row mt-1">
+    {% if category %} {% for category in category %}
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+      <h3>{{category.name}}</h3>
+    </div>
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4"></div>
+    {% endfor %} {% endif %}
+  </div>
+</div>
+{% endblock %}
